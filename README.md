@@ -10,7 +10,10 @@ kubectl get secret -n argocd
 
 kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
 
-echo <VALUE> | base64 -d; echo
+echo VALUE | base64 -d; echo
+
+After the password is changed, we can delete a secret
+kubectl delete secret argocd-initial-admin-secret -n argocd
 
 
 
