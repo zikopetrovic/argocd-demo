@@ -11,3 +11,8 @@ kubectl get secret -n argocd
 kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
 
 echo <VALUE> | base64 -d; echo
+
+
+
+After the application is defined, apply application.yaml to the cluster
+kubectl apply -f application.yaml
